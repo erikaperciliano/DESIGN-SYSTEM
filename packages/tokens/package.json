@@ -1,16 +1,19 @@
 {
   "name": "@ui/tokens",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Tokens de estilo para o design system",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm, cjs --dts",
     "dev": "tsup src/index.ts --format esm, cjs --dts --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "Seu Nome",
   "license": "ISC",
   "devDependencies": {
+    "@ui/ts-config": "*",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
   }
