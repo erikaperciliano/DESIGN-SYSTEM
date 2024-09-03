@@ -7,7 +7,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm, cjs --dts",
-    "dev": "tsup src/index.ts --format esm, cjs --dts --watch"
+    "dev": "tsup src/index.ts --format esm, cjs --dts --watch",
+    "lint": "eslint src/**/*.ts --fix"
   },
   "keywords": [],
   "author": "Seu Nome",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@ui/ts-config": "*",
     "@ui/tokens": "*",
+    "@ui/eslint-config": "*",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
   }
