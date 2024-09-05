@@ -6,18 +6,24 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm, cjs --dts",
-    "dev": "tsup src/index.ts --format esm, cjs --dts --watch",
+    "build": "tsup src/index.tsx --format esm, cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm, cjs --dts --watch",
     "lint": "eslint src/**/*.ts --fix"
   },
   "keywords": [],
   "author": "Seu Nome",
   "license": "MIT",
   "devDependencies": {
-    "@ui/ts-config": "*",
-    "@ui/tokens": "*",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
     "@ui/eslint-config": "*",
+    "@ui/tokens": "*",
+    "@ui/ts-config": "*",
+    "react": "^18.3.1",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
   }
 }
