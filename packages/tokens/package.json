@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "Seu Nome",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@ui/ts-config": "*",
     "@ui/eslint-config": "*",

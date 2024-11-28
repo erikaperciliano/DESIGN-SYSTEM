@@ -5,6 +5,13 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+  ".": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  }
+},
+
   "scripts": {
     "build": "tsup src/index.tsx --format esm, cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm, cjs --dts --watch",
@@ -24,6 +31,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@stitches/react": "^1.2.8"
+    "@stitches/react": "^1.2.8",
+    "@ui/react": "^1.0.0"
   }
 }
