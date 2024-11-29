@@ -1,14 +1,21 @@
-import { Button } from '@ui/react'
+import { Button, ButtonProps } from '@ui/react'
 import { StoryObj, Meta } from '@storybook/react'
 
 export default {
     title: 'Button',
-    component: Button
-} as Meta
+    component: Button,
 
-export const Primary: StoryObj = {
     args: {
-        children: 'Hello World', // Example props
-      },
+        children: 'Enviar', 
+    },
+} as Meta<ButtonProps>
+
+export const Primary: StoryObj<ButtonProps> = {
+  
 }
 
+export const Big: StoryObj<ButtonProps> = {
+    args: {
+        size: 'big'
+    }
+}

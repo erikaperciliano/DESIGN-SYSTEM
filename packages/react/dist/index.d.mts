@@ -1,8 +1,32 @@
-import * as react_jsx_runtime from 'react/jsx-runtime';
-import * as _stitches_react_types_styled_component from '@stitches/react/types/styled-component';
 import * as _stitches_react_types_css_util from '@stitches/react/types/css-util';
+import * as _stitches_react_types_styled_component from '@stitches/react/types/styled-component';
 
-declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {}, {}, _stitches_react_types_css_util.CSS<{}, {
+type ButtonProps = {
+    size: 'small' | 'big';
+};
+declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", _stitches_react_types_styled_component.StyledComponentProps<[{
+    fontFamily: string;
+    background: string;
+    borderRadius: string;
+    border: number;
+    fontWeight: string;
+    color: string;
+    variants: {
+        size: {
+            small: {
+                fontSize: number;
+                padding: string;
+            };
+            big: {
+                fontSize: number;
+                padding: string;
+            };
+        };
+    };
+    defaultVariants: {
+        size: "small";
+    };
+}]>, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {
         white: string;
         black: string;
@@ -204,6 +228,5 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
     transition: "transitions";
     zIndex: "zIndices";
 }, {}>>;
-declare function App(): react_jsx_runtime.JSX.Element;
 
-export { App, Button };
+export { Button, type ButtonProps };
